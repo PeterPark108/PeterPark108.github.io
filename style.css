@@ -110,11 +110,11 @@ footer{background:#0a0f1f;color:#fff;opacity:1}
 .logo img{display:block;height:44px;width:auto;transition:.3s}.logo:hover img{transform:rotate(-3deg) scale(1.04)}@media(max-width:600px){.logo img{height:34px}}
 .gal2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .art2{margin:0;position:relative;background:#fff;border-radius:18px;overflow:hidden;border:2px solid #0B1E4A;box-shadow:6px 6px 0 #0B1E4A;cursor:zoom-in;transition:.3s}
-.art2:hover{transform:rotate(-1deg) translateY(-4px);box-shadow:10px 10px 0 #C8102E}.art2 img{display:block;width:100%;height:auto;aspect-ratio:1}
+.art2:hover{transform:rotate(-1deg) translateY(-4px);box-shadow:10px 10px 0 #C8102E}.art2 img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#0B1E4A}
 .art2 figcaption{padding:16px 18px}.art2 b{display:block;font-size:18px}.art2 small{display:block;opacity:.6;margin:4px 0 10px}.art2 .lbl{z-index:1}
 .art2.soon{cursor:default;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;background:#0B1E4A;color:#fff;border-style:dashed}.art2.soon div{font-size:40px;color:#C8102E}.art2.soon small{max-width:280px}
 .lb{position:fixed;inset:0;background:#0a0f1fe6;z-index:50;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:30px}.lb.on{display:flex;animation:up .3s forwards}
-.lb img{max-width:min(90vw,900px);max-height:80vh;border-radius:12px;box-shadow:0 20px 60px #000}.lb p{color:#fff;font-weight:700}.lb button{position:absolute;top:20px;right:28px;font-size:40px;background:none;border:0;color:#fff;cursor:pointer}
+.lb img{max-width:min(90vw,1200px);max-height:80vh;width:auto;height:auto;object-fit:contain;border-radius:12px;box-shadow:0 20px 60px #000}.lb p{color:#fff;font-weight:700}.lb button{position:absolute;top:20px;right:28px;font-size:40px;background:none;border:0;color:#fff;cursor:pointer}
 .soonp{background:#0B1E4A;color:#fff}
 .contact{text-align:center;padding:90px 20px;background:#fff}.contact .kick{color:#C8102E;font-weight:800;letter-spacing:3px;font-size:13px}.contact h2{font-size:42px;margin:10px 0 14px}.contact p{opacity:.7;margin-bottom:28px}.contact .cta{justify-content:center;flex-wrap:wrap;margin-top:0}
 footer a{text-decoration:underline}

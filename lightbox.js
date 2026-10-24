@@ -1,0 +1,2 @@
+var lb=document.getElementById('lb');document.querySelectorAll('.art2[data-full]').forEach(function(f){f.addEventListener('click',function(){lb.querySelector('img').src=f.dataset.full;lb.querySelector('p').innerHTML=f.dataset.cap;lb.classList.add('on')})});
+lb.addEventListener('click',function(e){if(e.target.tagName!=='IMG')lb.classList.remove('on')});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});

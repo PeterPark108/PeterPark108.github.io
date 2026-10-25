@@ -2,3 +2,8 @@
 function web(cx,cy,R,n,r){for(var i=0;i<n;i++){var a=i/n*Math.PI*2;s+='<line x1="'+cx+'" y1="'+cy+'" x2="'+(cx+R*Math.cos(a))+'" y2="'+(cy+R*Math.sin(a))+'"/>';}
 for(var k=1;k<=r;k++){var rr=R*k/r,d='';for(var j=0;j<=n;j++){var b=j/n*Math.PI*2,x=cx+rr*Math.cos(b),y=cy+rr*Math.sin(b);d+=(j?'Q'+(cx+rr*.9*Math.cos(b-Math.PI/n))+' '+(cy+rr*.9*Math.sin(b-Math.PI/n))+' ':'M')+x+' '+y+' ';}s+='<path d="'+d+'"/>';}}
 web(0,0,700,14,9);web(1440,900,600,12,8);s+='</g></svg>';document.body.insertAdjacentHTML('afterbegin',s);})();
+(function(){var b=document.querySelector('.burger'),n=b&&b.closest('nav');if(!b)return;
+function set(o){n.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Đóng menu':'Mở menu');}
+b.addEventListener('click',function(){set(!n.classList.contains('open'));});
+n.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){set(false);b.focus();}});})();

@@ -124,3 +124,52 @@ footer a{text-decoration:underline}
 .cinfo li{white-space:nowrap}.cinfo a{color:inherit;text-decoration:none;border-bottom:1px dashed currentColor}
 footer a{color:inherit}
 .av{overflow:hidden;padding:0}.av img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;border-radius:50%;display:block}
+/* ===== REDESIGN 2026 — Editorial chuyên nghiệp ===== */
+:root{--ink:#0B1E4A;--mut:#4a5678;--line:#e2e6f0;--bg:#f7f8fb;--red:#C8102E;--blue:#1A4FB8}
+html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:#fff;padding:12px 16px;border-radius:10px;font-weight:700}.skip:focus{top:12px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+svg.i{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.web{opacity:.05}.home .mask{display:none}
+nav{position:sticky;top:0;z-index:20;background:rgba(11,30,74,.96);backdrop-filter:blur(10px);padding:10px clamp(18px,5vw,80px);box-shadow:0 1px 0 #ffffff14}
+.menu{display:flex;gap:4px;flex-wrap:wrap}.menu a{margin:0;padding:10px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:10px;font-size:14.5px;opacity:.9}.menu a:hover{background:#ffffff14;color:#fff}.menu a:after{display:none}
+.btn{min-height:48px;padding:12px 22px;border-radius:12px;border-width:1.5px}.btn.p{box-shadow:0 6px 18px #C8102E33}.btn.o{border-color:#cdd3e3;color:var(--ink)}.btn.o:hover{border-color:var(--ink)}.btn:hover{transform:translateY(-2px)}
+/* hero */
+.home{min-height:auto;padding:clamp(48px,8vw,96px) clamp(18px,5vw,80px) 72px;background:radial-gradient(900px 400px at 50% -10%,#1A4FB81a,transparent 70%),linear-gradient(#fff,var(--bg));border-bottom:1px solid var(--line)}
+.av{width:120px;height:120px;box-shadow:0 0 0 1px var(--line),0 14px 34px #0B1E4A26;border:4px solid #fff}
+.home h1{font-size:clamp(34px,5.2vw,60px);line-height:1.12;letter-spacing:-.02em;max-width:900px;text-wrap:balance}
+.tag{font-size:clamp(16px,1.6vw,19px);color:var(--mut);opacity:1;margin:14px 0 44px;max-width:640px}
+.fields{grid-template-columns:repeat(4,minmax(0,260px));gap:20px;width:100%;justify-content:center}
+.f{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;box-shadow:0 1px 2px #0B1E4A0d;display:flex;flex-direction:column}
+.f:before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--blue));transform:scaleX(0);transform-origin:left;transition:.35s}
+.f:hover{transform:translateY(-4px);border-color:#cfd6e8;box-shadow:0 18px 40px #0B1E4A1f}.f:hover:before{transform:scaleX(1)}
+.f .big{width:44px;height:44px;color:var(--red);margin-bottom:16px}.f p{color:var(--mut);opacity:1}.f .go{margin-top:auto;padding-top:16px}.go:before{content:none!important}
+.f .st{background:#eef2fb;color:var(--blue)}
+/* story */
+.story{padding:clamp(56px,8vw,100px) clamp(18px,6vw,100px)}.story .kick,.contact .kick,.kick{letter-spacing:.18em;font-size:12.5px;font-weight:800}
+.quote{border-radius:20px;line-height:1.45}
+.story .txt p{line-height:1.75;margin-bottom:14px;max-width:68ch}
+/* contact */
+.contact{background:#fff;border-top:1px solid var(--line)}.contact p{color:var(--mut);opacity:1}
+.cinfo li{display:inline-flex;align-items:center;gap:8px;min-height:44px}.cinfo svg.i{color:var(--red)}
+footer{padding:28px 20px;text-align:center;font-size:14px;line-height:1.8;background:#0a0f1f}
+/* sub pages */
+.sub{max-width:1240px;margin:0 auto;padding:28px clamp(18px,5vw,48px) 80px}.back{display:inline-flex;align-items:center;min-height:44px}
+.sub h1{font-size:clamp(32px,4.4vw,52px);letter-spacing:-.02em;line-height:1.15}.sub .lead{color:var(--mut);opacity:1}
+.card{border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 3px #0B1E4A0f}
+.art2{border:1px solid var(--line);box-shadow:0 8px 24px #0B1E4A14}.art2:hover{transform:translateY(-4px);box-shadow:0 18px 40px #0B1E4A26}
+.tools{flex-wrap:wrap}.tool{border:1px solid var(--line)}
+img{max-width:100%;height:auto}
+.lb button{min-width:48px;min-height:48px}
+@media(max-width:1100px){.fields{grid-template-columns:repeat(2,minmax(0,1fr));max-width:640px}}
+@media(max-width:600px){nav{position:static}.menu{width:100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -6px}.menu a{white-space:nowrap;padding:10px 10px}
+.fields{grid-template-columns:1fr 1fr}.f{padding:18px 14px}.f .big{width:36px;height:36px}.cta{width:100%}.cta .btn{flex:1 1 100%;justify-content:center}
+.cinfo{flex-direction:column;align-items:center;gap:0}.sub *{min-width:0}pre,.code{white-space:pre-wrap;word-break:break-word}.tools .tool{flex:1 1 40%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.up{opacity:1;transform:none}.reveal{opacity:1!important;transform:none!important}}
+.home h1,.home h1 *{color:var(--ink);text-shadow:none}.home h1 b{color:var(--red)!important}
+.btn{border:1.5px solid var(--red);transform-origin:center}.btn:before,.btn:after{content:none!important}
+.btn.p{background:var(--red);color:#fff;box-shadow:0 6px 18px #C8102E33}.btn.p:hover{background:#a50d26}
+.btn.o{background:#fff;color:var(--ink);border-color:#cdd3e3;box-shadow:none}
+.btn:hover{animation:none;transform:translateY(-2px)}.btn:active{transform:translateY(1px);box-shadow:none}
+@media(max-width:600px){.home h1{font-size:34px}}
+.home h1 b{text-shadow:none!important}

@@ -1,0 +1,17 @@
+.mn-ma{border:1.5px solid #ffffff55}
+.home{padding-top:clamp(28px,4vw,48px);padding-bottom:40px}
+.home .av{width:96px;height:96px;margin-bottom:12px}
+.home .tag{margin:10px 0 26px;max-width:720px}
+.f{padding:20px 18px}.f .big{margin-bottom:10px}
+.f-main{border:2px solid var(--red);box-shadow:0 14px 34px #C8102E26}
+.f .st.st1{background:var(--red);color:#fff}
+.cta{margin-top:28px;flex-wrap:wrap;justify-content:center}
+.story{padding:clamp(40px,5vw,64px) clamp(18px,6vw,100px);gap:48px}
+.story h2{font-size:clamp(30px,3.4vw,42px);margin:10px 0 18px}.quote{padding:28px 30px;font-size:20px}
+.more summary{cursor:pointer;font-weight:700;color:#ff8a98;min-height:44px;display:inline-flex;align-items:center;list-style:none}
+.more summary::-webkit-details-marker{display:none}.more summary:after{content:" ↓"}.more[open] summary:after{content:" ↑"}
+.more[open] summary{margin-bottom:8px}
+.contact{padding:56px 20px}
+@media(max-width:600px){.home{padding:20px 16px 32px}.home .av{width:76px;height:76px}.f{padding:14px 10px}.f .big{width:32px;height:32px;margin-bottom:6px}.f h3{font-size:15px;margin-bottom:0}.f .go{padding-top:6px;font-size:13px}.cta{margin-top:20px;gap:10px}.cta .btn{min-height:44px;padding:10px 14px}
+ .story{padding:36px 18px;gap:20px}.quote{font-size:17px;padding:22px 18px}.contact{padding:40px 16px}}
+.f .st{position:static;align-self:center;margin-bottom:10px}
